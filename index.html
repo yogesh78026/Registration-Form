@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="regform">
+        <h1>
+            Registration Form</h1>
+    </div>
+    <div class="main">
+
+        <form method="">
+            <div id="name">
+                <h2 class="name">Name </h2>
+                <input class="firstname" type="text" name="first_name" placeholder="First Name"><br>
+                <input class="lastname" type="text" name="last_name" placeholder="Last Name"><br>
+            </div>
+
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" name="email" placeholder="Enter your email-id">
+
+
+            <h2 class="name">Phone</h2>
+            <input class="number" type="text" name="phone" placeholder="Enter your mobile number">
+
+            <h2 class="name">Address</h2>
+            <input class="address" type="address" name="address" placeholder="Enter your address">
+
+            <h2 class="name">Gender</h2>
+            <div class="form check form-check-inline" id="male">
+                <input type="radio" class="form-check-input" id="male" name="gender" value="male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline" id="female">
+                <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check form-check-inline" id="others">
+                <input type="radio" class="form-check-input" id="others" name="others" value="others">
+                <label class="form-check-label" for="others">Others</label>
+            </div>
+
+            <h2 class="name">University Name</h2>
+            <input class="uname" type="uname" name="uname" placeholder="Enter your university name">
+
+            <h2 class="name">
+                Course</h2>
+            <select id="option" class="form-select" aria-label="Default select example">
+                <option disabled="disabled" selected="selected">--Choose option--</option>
+                <option>MERN STACK DEVELOPMENT</option>
+                <option>DATA STRUCTURE & ALGORITHM WITH JAVA</option>
+                <option>DATA SCIENCE WITH PYTHON</option>
+                <option>FLUTTER DEVELOPMENT</option>
+                <option>MACHINE LEARNING</option>
+            </select>
+
+            <h2 class="name">Description</h2>
+            <div class="form-outline">
+                <textarea class="form-control" id="textbox" rows="3" data-gramm="false" wt-ignore-input="true"
+                    style="width: 758px; height: 121px;" placeholder="Write your concern here"></textarea>
+            </div>
+
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit"
+                onclick="fun()">SUBMIT</button>
+
+            <script src="script.js"></script>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
